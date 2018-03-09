@@ -18,7 +18,7 @@ def main():
         with open(homepath + "\\pip\\pip.ini", "w") as fp:        # create the pip.ini file
             fp.write(CONTENT)                                     # write CONTENT
     elif sys.platform == 'linux':                                 # if on linux
-        if not os.path.exists('~/pip'):                           # check whether the folder named .pip existed
+        if not os.path.exists('~/.pip'):                           # check whether the folder named .pip existed
             os.makedirs("~/.pip")                                 # if not, create it
         with open("~/.pip/pip.conf", "w") as fp:                  # create the pip.conf file
             fp.write(CONTENT)                                     # write CONTENT
